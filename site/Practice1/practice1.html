@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Responsive Layout</title>
+<style>
+
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  
+}
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+
+}
+/*section {
+	border: 1px solid black;
+    background-color: #F0FFFF;
+  	
+  	top: 0px;
+  	margin- left: 20px;
+  	margin-right: 20px;
+  
+}*/
+
+section {
+  border: 1px solid black;
+  margin: 15px;
+  background-color: grey;
+}
+
+p {
+  padding: 10px;
+  width: 100%;
+  height: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Helvetica;
+  color: black;
+  overflow: auto;
+}
+
+/*p {
+  padding: 10px;
+  width: 100%;
+  height: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Helvetica;
+  color: black;
+  overflow: auto;
+}*/
+
+
+#chicken {
+  float: right;
+  background-color: #87CEFA;
+  text-align: center;
+  width: 150px;
+  border: 1px solid black;
+  padding: 5px;
+  font-size: 150%;
+}
+
+#beef {
+  float: right;
+  background-color: #E6E6FA;
+  text-align: center;
+  border: 1px solid black;
+  padding: 5px;
+  width: 150px;
+  font-size: 150%;
+}
+
+#Sushi {
+  float: right;
+  background-color: orange;
+  text-align: center;
+  border: 1px solid black;
+  padding: 5px;
+  width: 150px;
+  font-size: 150%;
+}
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+  }
+  .col-lg-1 {
+    width: 8.33%;
+  }
+  .col-lg-2 {
+    width: 16.66%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-9 {
+    width: 74.99%;
+  }
+  .col-lg-10 {
+    width: 83.33%;
+  }
+  .col-lg-11 {
+    width: 91.66%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+  
+  }
+  .col-md-1 {
+    width: 8.33%;
+  }
+  .col-md-2 {
+    width: 16.66%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.33%;
+  }
+  .col-md-5 {
+    width: 41.66%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.33%;
+  }
+  .col-md-8 {
+    width: 66.66%;
+  }
+  .col-md-9 {
+    width: 74.99%;
+  }
+  .col-md-10 {
+    width: 83.33%;
+  }
+  .col-md-11 {
+    width: 91.66%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+<h1>Our Menu</h1>
+
+<div class="row">
+  <div class="col-lg-4 col-md-6">
+  	<section>
+  		<div id="chicken"> Chicken </div>
+  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, molestias, cumque! Odio illum quisquam sint porro exercitationem natus in consectetur blanditiis sunt, dolor aliquam magnam necessitatibus nobis mollitia quo obcaecati!</p>
+  	</section>
+  	</div>
+
+  <div class="col-lg-4 col-md-6">
+  	<section>
+  		<div id="beef"> Beef </div>
+  		<p>Beef muscle meat can be cut into roasts, short ribs or steak (filet mignon, sirloin steak, rump steak, rib steak, rib eye steak, hanger steak, etc.) Some cuts are processed (corned beef or beef jerky), and trimmings, usually mixed with meat from older, leaner cattle, are ground, minced or used in sausages. The blood is used in some varieties of blood sausage. Other parts that are eaten include the oxtail, liver, tongue, tripe from the reticulum or rumen, glands (particularly the pancreas and thymus, referred to as sweetbread), the heart, the brain (although forbidden where there is a danger of bovine spongiform encephalopathy, BSE), the kidneys, and the tender testicles of the bull (known in the United States as calf fries, prairie oysters, or Rocky Mountain oysters). Some intestines are cooked and eaten as-is, but are more often cleaned and used as natural sausage casings. The bones are used for making beef stock. 
+        </p>
+         </section>
+      </div>
+  
+  <div class="col-lg-4 col-md-12">
+  	<section>
+  		<div id="Sushi"> Sushi </div>
+  		<p>  Sushi (すし, 寿司, 鮨?) is a type of food preparation originating in Japan, consisting of cooked vinegared rice (鮨飯 sushi-meshi) combined with other ingredients (ネタ neta) such as raw seafood, vegetables and sometimes tropical fruits. Ingredients and forms of sushi presentation vary widely, but the ingredient which all sushi have in common is rice (also referred to as shari (しゃり) or sumeshi (酢飯)). Although commonly mistaken for sushi, sashimi, which is also a Japanese delicacy, consists of thinly sliced raw fish and may or may not be served with rice.</p>
+  	</section>	
+  	</div>
+  </div>
+  
+</div>
+
+</body>
+</html> 
+
+
+<!--<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Positioning Elements</title>
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  margin-bottom: 15px;
+}
+
+div#container {
+  background-color: #00FFFF;
+  position: relative;
+  top: 60px;
+}
+p {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  margin-bottom: 15px;
+}
+
+
+</style>
+</head>
+<body>
+<h1>Positioning Elements</h1>
+
+<div id="container">
+  <p id="p1"></p>
+  <p id="p2"></p>
+  <p id="p3"></p>
+  <p id="p4"></p>
+</div>
+
+</body>
+</html>-->
