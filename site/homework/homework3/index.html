@@ -4,24 +4,75 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <title>Boostrap Starter Page</title>
+    <title>Food LCC</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
   </head>
 <body>
+  <header>
+    <nav id = "header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <div class="navbar-brand">
+            <a href="index.html" class="pull-left"><h1>Food,LLC</h1></a>
+          </div>
 
-  <h1>Hello Coursera!</h1>
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          </div>
+
+          <div id="collapsable-nav" class="collapse navbar-collapse">
+            <ul id="nav-list" class="nav navbar-nav navbar-right">
+              <li class="visible-xs active">
+                <a href="index.html">
+                  <span class="glyphicon glyphicon-home"></span><br class="hidden-xs">Home</a>
+              </li>
+              <li class="visible-xs">
+                <a href="chicken.html">
+                  <span class="glyphicon glyphicon-apple"></span><br class="hidden-xs">Chicken</a>
+              </li>
+              <li class="visible-xs">
+                <a href="beef.html">
+                  <span class="glyphicon glyphicon-heart"></span><br class="hidden-xs">Beef</a>
+              </li>
+              <li class="visible-xs">
+                <a href="sushi.html">
+                  <span class="glyphicon glyphicon-pencil"></span><br class="hidden-xs">Sushi</a>
+              </li>
+            </ul>
+
+          </div> 
+      </div>
+    </nav>   
+  </header>
+
+
+
+  <div id="main-content" class="container">
+    <div class="jumbotron"> 
+      <h1>Menu</h1>
+    </div>
+
+    <div id="home-tiles" class="row">
+      <div id = "chicken" class="col-md-12 col-sm-12 col-xs-12">
+        <h2>chicken</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed orci turpis. Nam non ipsum neque. Aenean sit amet massa tortor. Suspendisse at consequat elit. Donec sit amet massa a arcu interdum suscipit placerat nec sem. Sed ultricies lectus ut nibh vehicula, non porttitor sem vulputate. Duis molestie faucibus lectus quis vestibulum. Praesent laoreet dolor turpis, nec molestie odio volutpat quis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam mattis in nisl in dignissim. Sed ultricies turpis id libero ultrices, id elementum nibh imperdiet. Vivamus ullamcorper lectus vitae felis suscipit dictum. In ut libero dignissim, facilisis velit eu, efficitur sapien. Cras molestie ligula ac varius ultricies. Nulla facilisi. Vestibulum fringilla dapibus aliquam. Nulla nisi tortor, ullamcorper non malesuada at, commodo id sem. Etiam eget finibus massa. Nulla facilisi. Aliquam nisl diam, egestas a nisl et, tristique mollis risus. Aenean nulla nibh, sagittis non odio at, dignissim lobortis tellus. Nam gravida eros euismod nulla ornare scelerisque. Nunc ultrices ante sit amet metus suscipit vulputate. Curabitur lacinia tellus et lacus finibus, vel bibendum diam blandit. Morbi et ullamcorper dui. Vivamus purus quam, dignissim non auctor eget, eleifend a diam. Nam sit amet eros vel enim varius malesuada. Etiam ut purus finibus, aliquet diam id, mollis libero. Aliquam eros arcu, ornare non blandit consectetur, laoreet sit amet ipsum. Etiam sit amet purus lorem. Maecenas nunc arcu, ultrices pellentesque consequat id, laoreet at dui. Morbi hendrerit mi felis, non lobortis metus egestas quis. Integer ut velit ut lacus pharetra convallis sed ac ex. Maecenas sed sem ornare augue feugiat congue. Fusce a est ac ipsum bibendum dignissim. Aenean risus enim, fermentum non pretium vel, imperdiet sit amet enim. Morbi iaculis dolor non purus tempor, nec luctus enim rutrum. Aliquam ornare velit eget aliquet auctor. Nulla facilisi. Donec a cursus enim. Maecenas tempor semper ligula. Aenean fringilla mauris et sem posuere semper. Suspendisse mattis sapien a justo ultricies, et pretium sem lobortis. Donec dictum quis quam vel placerat. Suspendisse potenti. Donec sagittis quis mauris at tempor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+      </div>
+
+    </div>
+  </div>
+
+
+
 
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
-  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/jquery-3.1.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
 </body>
